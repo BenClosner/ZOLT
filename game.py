@@ -1,5 +1,5 @@
 #ZOLT is my mix of Titan Souls and The Legend of Zelda.
-#Sprites are not mine, they are from ...
+#Sprites are not mine, they are property of Nintendo
 
 import pygame
 import character, event_handler, constants
