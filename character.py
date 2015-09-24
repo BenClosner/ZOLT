@@ -158,7 +158,6 @@ class character_user(character_base):
         lowx, highx = abs(self.x - constants.WINDOWX//2), abs(self.x - constants.WINDOWX//2) + constants.SPRITEX
         lowy, highy = abs(self.y - constants.WINDOWY//2), abs(self.y - constants.WINDOWY//2) + constants.SPRITEY
         for enemy in self.map.enemy_list:
-            print(lowx, highx, lowy, highy, enemy.x, enemy.y)
             if lowx < enemy.x < highx and lowy < enemy.y < highy:
                 self.map, self.x, self.y = maps.starting_room,0,0
             if lowx < enemy.x + constants.SPRITEX < highx and lowy < enemy.y + constants.SPRITEY < highy:
